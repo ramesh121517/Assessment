@@ -1,0 +1,130 @@
+/* Basic Styling for Navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1565c0;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo */
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation items */
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item label {
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.nav-item label:hover {
+    background-color: #1e88e5;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1976d2;
+    padding: 10px;
+    border-radius: 4px;
+    top: 40px;
+}
+
+.dropdown-item {
+    padding: 8px 10px;
+    color: white;
+    white-space: nowrap;
+}
+
+.dropdown-item label:hover {
+    background-color: #2196f3;
+    border-radius: 4px;
+}
+
+/* Hoverable dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Nested dropdown */
+.nested-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    background-color: #42a5f5;
+}
+
+.dropdown-item:hover .nested-dropdown {
+    display: block;
+}
+
+/* Login button */
+.login-btn button {
+    padding: 8px 15px;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.login-btn button:hover {
+    background-color: #ef6c00;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-item label {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .dropdown-content,
+    .nested-dropdown {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 40px;
+    }
+
+    .nav-item label {
+        font-size: 14px;
+    }
+
+    .login-btn button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

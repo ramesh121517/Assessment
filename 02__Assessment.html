@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="02__Assessment.css">
+    <script defer src="02__Assessment.js"></script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm" action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter a valid email"><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" placeholder="Enter 10 digit mobile number"><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female<br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br>
+
+        <label for="pin">Area PIN:</label>
+        <input type="text" id="pin" name="pin"><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state"><br>
+
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification">
+            <option value="">Select Qualification</option>
+            <option value="CS">Computer Science</option>
+            <option value="IT">Information Technology</option>
+            <option value="CA">b.Com</option>
+            <option value="BA">b.A.</option>
+            <option value="BC">bca</option>
+        </select><br>
+
+        <label>Specialization:</label>
+        <input type="checkbox" name="specialization" value="Computer Science"> Computer Science
+        <input type="checkbox" name="specialization" value="IT"> Information Technology<br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+
+        <input type="submit" value="Register" id="registerButton">
+    </form>
+</body>
+</html>
